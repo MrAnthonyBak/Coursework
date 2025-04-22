@@ -1,0 +1,20 @@
+p:hover {
+    background-color: orange;
+}
+
+      li:nth-child(even) {
+    color:green;
+}
+
+Li:nth-child(odd) {
+    color:red;
+}
+
+section {
+    height:200;
+    background-color: brown;
+}
+
+heading {
+    height: calc(100% - 50px);
+}

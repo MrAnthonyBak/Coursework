@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block 10</title>
+    <link rel="stylesheet" href="index.css" >
+</head>
+<body>
+    <header>
+        <h1>HTML Forms and Expanded CSS</h1>
+    </header>
+    
+    <div class="grid-container">
+        <section>
+            <h2>Simple form</h2>
+            <!-- Create a simple form with a submit button that collects the users first and last name -->
+             <form action="./submission.html">
+                <label for="first_name">First Name:</label>
+                <input name="first_name" type="text" id="first_name" />
+
+                <label>Last Name:</label>
+                <input name="last_name" type="text" id="last_name" />
+
+                <input type="Submit" value="Submit Form"/>
+             </form>
+        </section>
+
+        <section>
+            <h2>Phone, email and password</h2>
+            <!-- Create a form with a submit button that collects phone, email and password -->
+             <form>
+                <label for="phone">Cell Phone:</label>
+                <input name="phone" id="phone" type="tel" required />  <!-- "required = mandatory; default is optional"-->
+
+                <label for="email">Email:</label>
+                <input name="email" id="email" type="email" />
+
+                <label for="password">Password:</label>
+                <input name="password" id="password" type="password" />
+
+                <input type="submit" />
+             </form>
+        </section>
+
+        <section>
+            <h2>Radio button</h2>
+            <!-- Create form with a submit button asking users which is their favorite languague: CSS, HTML or Javascript -->
+             <form>
+                <label for="html">
+                    <input name="fav_lang" id="html" type="radio" value="html" />
+                    HTML
+                </label>
+
+                <label for="css">
+                    <input name="fav_lang" id="css" type="radio" value="css" />
+                    CSS
+                </label>
+
+                <label for="javascript">
+                    <input name="fav_lang" id="javascript" type="radio" value="javascript" />
+                    JavaScript    <!-- move name above "input name" if you want the name first then the button -->
+                </label>
+
+                <input type="submit" />
+             </form>
+        </section>
+
+        <section>
+            <h2>Checkbox</h2>
+            <!-- Create a form with a submit button asking users to pick their favorite animal: dog, cat, or bird -->
+            <form>
+                <label for="dog">
+                    <input id="dog" name="dog" value="dog" type="checkbox" />
+                    Dog
+                </label> 
+
+                <label for="cat">
+                    <input id="cat" name="cat" value="cat" type="checkbox" />
+                    Cat
+                </label>
+
+                <label for="bird">
+                    <input id="bird" name="bird" value="bird" type="checkbox" />
+                    Bird
+                </label>
+
+                <input type="submit" />
+            </form>
+        </section>
+
+        <section>
+            <h2>Text Area</h2>
+            <!-- Create a form with a submit button asking users for a review of your website -->
+             <form>
+                <label for="review">Review:</label>
+                <textarea id="review" name="review" cols="30" rows="10" maxlength="300"></textarea>
+                <!-- maxlength is the maximum number of characters user can type in -->
+                <input type="submit" />
+             </form>
+        </section>
+
+        <section>
+            <h2>Dropdown</h2>
+            <!-- Create a dropdown form that lets students select their favorite workshop so far:  -->
+            <form>
+                <label for="workshop">Select a Workshop:</label>
+                <select name="workshop" id="workshop" required>
+                    <option value="">Please Select From:</option>
+                    <option value="workshop1">Workshop 1</option>
+                    <option value="workshop2">Workshop 2</option>
+                    <option value="workshop3">Workshop 3</option>
+                    <option value="workshop4">Workshop 4</option>
+                </select>
+                <input type="submit" />
+            </form>
+
+        </section>
+    </div>
+</body>
+</html>
